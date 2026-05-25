@@ -1,0 +1,811 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1"/>
+<title>TruverIQ — AI-First Background Verification & Trust Infrastructure</title>
+<meta name="description" content="TruverIQ delivers AI-powered enterprise background verification — employment, education, criminal, KYC, AML screening, fraud detection and more. DPDPA compliant. 99.2% accuracy."/>
+<meta name="keywords" content="background verification, BGV India, AI verification, KYC, AML screening, employee verification, fraud detection, DPDPA compliance, digital KYC, TruverIQ"/>
+<meta property="og:type" content="website"/>
+<meta property="og:url" content="https://truveriq.com"/>
+<meta property="og:title" content="TruverIQ — AI-First Background Verification"/>
+<meta property="og:description" content="Enterprise-grade AI verification intelligence. DPDPA compliant. 99.2% accuracy."/>
+<meta property="og:site_name" content="TruverIQ"/>
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:site" content="@truveriq"/>
+<meta name="twitter:title" content="TruverIQ — AI-First Background Verification"/>
+<meta name="twitter:description" content="Enterprise-grade AI verification intelligence."/>
+<meta name="robots" content="index, follow"/>
+<link rel="canonical" href="https://truveriq.com"/>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet"/>
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"Organization",
+  "name":"TruverIQ",
+  "url":"https://truveriq.com",
+  "description":"AI-first enterprise background verification platform.",
+  "address":{"@type":"PostalAddress","addressCountry":"IN"},
+  "sameAs":["https://linkedin.com/company/truveriq","https://twitter.com/truveriq"]
+}
+</script>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
+*{box-sizing:border-box;margin:0;padding:0}
+:root{
+  --bg:#020B1D;--bg2:#061428;--bg3:#0A1E38;
+  --primary:#2563EB;--accent:#38B6FF;--violet:#6D28D9;
+  --text:#E5E7EB;--muted:#8FA3BD;
+  --glass:rgba(37,99,235,0.08);--gb:rgba(56,182,255,0.18);
+  --grad:linear-gradient(135deg,#2563EB,#38B6FF);
+  --gradv:linear-gradient(135deg,#2563EB,#6D28D9);
+}
+html{scroll-behavior:smooth}
+body{font-family:'Inter',sans-serif;background:var(--bg);color:var(--text);font-size:14px;line-height:1.6;overflow-x:hidden}
+::-webkit-scrollbar{width:5px}
+::-webkit-scrollbar-track{background:var(--bg2)}
+::-webkit-scrollbar-thumb{background:var(--gb);border-radius:3px}
+::selection{background:rgba(56,182,255,.25);color:#fff}
+/* NAV */
+.nav{position:sticky;top:0;z-index:100;background:rgba(2,11,29,0.97);backdrop-filter:blur(18px);border-bottom:1px solid var(--gb);padding:0 20px;display:flex;align-items:center;justify-content:space-between;height:56px;gap:12px}
+.logo-w{display:flex;align-items:center;gap:9px;cursor:pointer;flex-shrink:0;text-decoration:none}
+.logo-text{font-size:17px;font-weight:800;letter-spacing:-.3px;line-height:1}
+.logo-text .tr{color:#fff}.logo-text .iq{color:var(--accent)}
+.tagline-s{font-size:7px;letter-spacing:2px;color:var(--muted);font-weight:600;margin-top:1px}
+.navlinks{display:flex;gap:1px;overflow-x:auto;scrollbar-width:none}
+.navlinks::-webkit-scrollbar{display:none}
+.nl{padding:5px 9px;font-size:11px;color:var(--muted);cursor:pointer;border-radius:5px;transition:all .2s;white-space:nowrap;user-select:none}
+.nl:hover,.nl.act{color:#fff;background:var(--glass)}
+.navcta{display:flex;gap:7px;align-items:center;flex-shrink:0}
+.btn{padding:6px 14px;border-radius:6px;font-size:11px;font-weight:600;cursor:pointer;transition:all .2s;border:none;font-family:'Inter',sans-serif}
+.btn-g{background:transparent;color:var(--muted);border:1px solid var(--gb)}
+.btn-g:hover{color:#fff;border-color:var(--accent)}
+.btn-p{background:var(--grad);color:#fff}
+.btn-p:hover{opacity:.88;transform:translateY(-1px)}
+.btn-o{background:transparent;color:var(--accent);border:1px solid var(--accent)}
+.btn-o:hover{background:rgba(56,182,255,.08)}
+.btn-v{background:var(--gradv);color:#fff}
+.btn-lg{padding:11px 22px;font-size:13px;border-radius:8px}
+/* PAGES */
+.pg{display:none}.pg.on{display:block}
+/* HERO */
+.hero{position:relative;padding:72px 24px 56px;overflow:hidden;background:radial-gradient(ellipse 70% 50% at 50% -10%,rgba(37,99,235,.14),transparent)}
+.orb{position:absolute;border-radius:50%;filter:blur(80px);pointer-events:none}
+.s{max-width:1100px;margin:0 auto;padding:0}
+/* UTILS */
+.badge{display:inline-flex;align-items:center;gap:6px;background:rgba(56,182,255,.1);border:1px solid rgba(56,182,255,.26);color:var(--accent);padding:4px 12px;border-radius:20px;font-size:10px;font-weight:700;letter-spacing:.5px}
+.bdot{width:6px;height:6px;background:var(--accent);border-radius:50%;animation:pulse 2s infinite}
+@keyframes pulse{0%,100%{opacity:1;transform:scale(1)}50%{opacity:.4;transform:scale(.7)}}
+h1{font-size:42px;font-weight:800;line-height:1.1;letter-spacing:-1.5px}
+h2{font-size:28px;font-weight:700;line-height:1.2;letter-spacing:-.5px}
+h3{font-size:15px;font-weight:600}
+.gt{background:linear-gradient(135deg,#fff 20%,var(--accent) 60%,var(--violet));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
+.gtv{background:linear-gradient(135deg,var(--accent),var(--violet));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
+.card{background:var(--glass);border:1px solid var(--gb);border-radius:12px;padding:20px;transition:all .2s}
+.card:hover{border-color:rgba(56,182,255,.38);background:rgba(56,182,255,.1)}
+.secpad{padding:56px 24px;background:linear-gradient(180deg,transparent,rgba(37,99,235,.03),transparent)}
+.slabel{font-size:10px;font-weight:700;letter-spacing:2px;color:var(--muted);text-transform:uppercase;margin-bottom:10px}
+.muted{color:var(--muted)}
+.chip{padding:2px 7px;border-radius:4px;font-size:9px;font-weight:700;letter-spacing:.2px}
+.cg{background:rgba(34,197,94,.12);color:#4ade80;border:1px solid rgba(34,197,94,.2)}
+.cb{background:rgba(56,182,255,.12);color:var(--accent);border:1px solid rgba(56,182,255,.2)}
+.ca{background:rgba(251,191,36,.1);color:#fbbf24;border:1px solid rgba(251,191,36,.2)}
+.cr{background:rgba(239,68,68,.1);color:#f87171;border:1px solid rgba(239,68,68,.2)}
+.cv{background:rgba(109,40,217,.15);color:#a78bfa;border:1px solid rgba(109,40,217,.25)}
+.sdot{width:7px;height:7px;border-radius:50%;background:#22c55e;flex-shrink:0;box-shadow:0 0 6px rgba(34,197,94,.5)}
+.pb{height:3px;background:rgba(255,255,255,.08);border-radius:2px;overflow:hidden}
+.pf{height:100%;background:var(--grad);border-radius:2px}
+.divl{height:1px;background:linear-gradient(90deg,transparent,var(--gb),transparent);margin:14px 0}
+.g2{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.g3{display:grid;grid-template-columns:1fr 1fr 1fr;gap:16px}
+.g4{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
+.fl{display:flex;align-items:center}
+.flc{display:flex;flex-direction:column}
+.gap8{gap:8px}.gap12{gap:12px}
+.mb8{margin-bottom:8px}.mb12{margin-bottom:12px}.mb16{margin-bottom:16px}.mb24{margin-bottom:24px}.mb32{margin-bottom:32px}
+.mt8{margin-top:8px}.mt12{margin-top:12px}.mt16{margin-top:16px}.mt24{margin-top:24px}
+.tc{text-align:center}
+.ibox{width:38px;height:38px;border-radius:9px;background:rgba(56,182,255,.12);border:1px solid rgba(56,182,255,.2);display:flex;align-items:center;justify-content:center;flex-shrink:0}
+.ibox svg{width:16px;height:16px;stroke:var(--accent);fill:none;stroke-width:1.8}
+.tag{display:inline-block;background:rgba(56,182,255,.1);border:1px solid rgba(56,182,255,.2);color:var(--accent);padding:2px 7px;border-radius:4px;font-size:9px;font-weight:700}
+.tagv{background:rgba(109,40,217,.15);border-color:rgba(109,40,217,.3);color:#a78bfa}
+.snum{font-size:36px;font-weight:800;line-height:1}
+.fstep{flex:1;text-align:center;min-width:80px}
+.fline{width:18px;height:1px;background:var(--gb);flex-shrink:0;margin-top:18px}
+/* DASHBOARD */
+.mbrow{background:var(--bg2);border:1px solid var(--gb);border-radius:10px;overflow:hidden}
+.mbar{background:var(--bg3);padding:7px 12px;display:flex;align-items:center;gap:5px}
+.mdot{width:9px;height:9px;border-radius:50%}
+.murl{flex:1;background:var(--bg);border-radius:4px;padding:2px 9px;font-size:9px;color:var(--muted);margin:0 7px}
+.dsb{width:130px;background:var(--bg3);border-right:1px solid var(--gb);padding:10px 0;flex-shrink:0}
+.dni{padding:6px 12px;font-size:10px;color:var(--muted);display:flex;align-items:center;gap:7px}
+.dni.act{color:var(--accent);background:var(--glass)}
+.dni svg{width:11px;height:11px;stroke:currentColor;fill:none;stroke-width:2}
+.mt{width:100%;font-size:9px;border-collapse:collapse}
+.mt th{color:var(--muted);font-weight:500;padding:4px 7px;text-align:left;border-bottom:1px solid var(--gb)}
+.mt td{padding:4px 7px;color:var(--text);border-bottom:1px solid rgba(255,255,255,.03)}
+/* PLACEHOLDER */
+.phbox{border:2px dashed rgba(56,182,255,.18);border-radius:12px;padding:20px;text-align:center;background:rgba(56,182,255,.02)}
+.avph{width:60px;height:60px;border-radius:50%;background:var(--bg3);border:2px dashed rgba(56,182,255,.28);margin:0 auto 9px;display:flex;align-items:center;justify-content:center}
+.certph{height:76px;border:2px dashed rgba(109,40,217,.22);border-radius:9px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:4px;background:rgba(109,40,217,.03)}
+/* FOOTER */
+.footer{background:var(--bg2);border-top:1px solid var(--gb);padding:48px 24px 20px}
+.fcol h4{font-size:10px;font-weight:700;color:#fff;margin-bottom:11px;letter-spacing:.5px;text-transform:uppercase}
+.fcol a{display:block;font-size:11px;color:var(--muted);margin-bottom:6px;cursor:pointer;text-decoration:none}
+.fcol a:hover{color:var(--accent)}
+.fbot{display:flex;align-items:center;justify-content:space-between;font-size:10px;color:var(--muted);border-top:1px solid var(--gb);padding-top:18px;flex-wrap:wrap;gap:8px;margin-top:36px}
+/* COOKIE */
+.ckover{position:fixed;bottom:0;left:0;right:0;z-index:999;animation:slideup .5s ease}
+@keyframes slideup{from{transform:translateY(100%);opacity:0}to{transform:translateY(0);opacity:1}}
+.ckbox{background:rgba(6,20,40,0.98);backdrop-filter:blur(20px);border-top:1px solid rgba(56,182,255,.22);border-radius:16px 16px 0 0;padding:18px 24px 22px;box-shadow:0 -8px 40px rgba(37,99,235,.18)}
+.cktog{padding:4px 10px;border-radius:4px;font-size:9px;font-weight:700;border:1px solid;cursor:pointer;transition:all .2s;font-family:'Inter',sans-serif}
+.scroll-x{overflow-x:auto;scrollbar-width:thin;scrollbar-color:var(--gb) transparent}
+/* MOBILE */
+@media(max-width:768px){
+  h1{font-size:28px}
+  h2{font-size:22px}
+  .g2,.g3,.g4{grid-template-columns:1fr}
+  .hero{padding:48px 16px 40px}
+  .navlinks .nl:nth-child(n+6){display:none}
+  .footer>div>div:first-child{grid-template-columns:1fr 1fr}
+}
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav class="nav">
+  <div class="logo-w" onclick="go('home')">
+    <svg width="30" height="30" viewBox="0 0 100 100" fill="none">
+      <defs>
+        <linearGradient id="lsg" x1="0" y1="0" x2="100" y2="100" gradientUnits="userSpaceOnUse">
+          <stop offset="0%" stop-color="#38B6FF"/><stop offset="50%" stop-color="#2563EB"/><stop offset="100%" stop-color="#6D28D9"/>
+        </linearGradient>
+        <linearGradient id="lcg" x1="20" y1="30" x2="80" y2="90" gradientUnits="userSpaceOnUse">
+          <stop offset="0%" stop-color="#ffffff"/><stop offset="100%" stop-color="#c7d8ff"/>
+        </linearGradient>
+      </defs>
+      <path d="M50 5 L90 20 L90 52 C90 74 70 88 50 95 C30 88 10 74 10 52 L10 20 Z" fill="url(#lsg)"/>
+      <path d="M50 8 L87 22 L87 52 C87 72 68 86 50 93 C32 86 13 72 13 52 L13 22 Z" fill="url(#lsg)" opacity=".85"/>
+      <path d="M29 50 L44 65 L71 37" stroke="url(#lcg)" stroke-width="9.5" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+      <circle cx="73" cy="17" r="3.2" fill="#38B6FF" opacity=".9"/>
+      <circle cx="80" cy="11" r="2.2" fill="#38B6FF" opacity=".7"/>
+      <circle cx="80" cy="20" r="1.8" fill="#6D28D9" opacity=".8"/>
+      <circle cx="73" cy="9"  r="1.8" fill="#38B6FF" opacity=".6"/>
+    </svg>
+    <div>
+      <div class="logo-text"><span class="tr">Truver</span><span class="iq">IQ</span></div>
+      <div class="tagline-s">VERIFIED · TRUSTED · CERTAIN</div>
+    </div>
+  </div>
+  <div class="navlinks">
+    <div class="nl act" id="nl-home"       onclick="go('home',this)">Home</div>
+    <div class="nl"     id="nl-platform"   onclick="go('platform',this)">Platform</div>
+    <div class="nl"     id="nl-services"   onclick="go('services',this)">Services</div>
+    <div class="nl"     id="nl-ai"         onclick="go('ai',this)">AI Engine</div>
+    <div class="nl"     id="nl-industries" onclick="go('industries',this)">Industries</div>
+    <div class="nl"     id="nl-security"   onclick="go('security',this)">Security</div>
+    <div class="nl"     id="nl-company"    onclick="go('company',this)">Company</div>
+    <div class="nl"     id="nl-dashboard"  onclick="go('dashboard',this)">Dashboard</div>
+    <div class="nl"     id="nl-pricing"    onclick="go('pricing',this)">Pricing</div>
+  </div>
+  <div class="navcta">
+    <button class="btn btn-g" onclick="go('demo')">Book Demo</button>
+    <button class="btn btn-p">Sign In</button>
+  </div>
+</nav>
+
+<!-- ═══════════════ HOME ═══════════════ -->
+<div id="pg-home" class="pg on">
+  <div class="hero">
+    <div class="orb" style="top:15%;left:3%;width:380px;height:380px;background:rgba(37,99,235,.06)"></div>
+    <div class="orb" style="top:25%;right:4%;width:280px;height:280px;background:rgba(109,40,217,.07)"></div>
+    <div class="s tc" style="position:relative">
+      <div class="badge mb16"><span class="bdot"></span>AI-FIRST TRUST INFRASTRUCTURE PLATFORM</div>
+      <h1 class="mb16">Verify with Intelligence.<br><span class="gt">Trust at Enterprise Scale.</span></h1>
+      <p style="font-size:16px;color:var(--muted);max-width:560px;margin:0 auto 28px;line-height:1.8">TruverIQ powers next-generation background verification — AI-orchestrated, fraud-resistant, and built for enterprises that cannot afford uncertainty.</p>
+      <div style="display:flex;gap:10px;justify-content:center;flex-wrap:wrap;margin-bottom:40px">
+        <button class="btn btn-p btn-lg" onclick="go('demo')">Book a Demo ↗</button>
+        <button class="btn btn-v btn-lg" onclick="go('platform')">Explore Platform</button>
+        <button class="btn btn-g btn-lg" onclick="go('pricing')">Contact Sales</button>
+      </div>
+      <div style="display:flex;gap:10px;justify-content:center;flex-wrap:wrap">
+        <span style="display:inline-flex;align-items:center;gap:5px;background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.09);border-radius:6px;padding:4px 10px;font-size:10px;color:var(--muted)">🛡 DPDPA Ready</span>
+        <span style="display:inline-flex;align-items:center;gap:5px;background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.09);border-radius:6px;padding:4px 10px;font-size:10px;color:var(--muted)">✅ ISO 27001 Aligned</span>
+        <span style="display:inline-flex;align-items:center;gap:5px;background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.09);border-radius:6px;padding:4px 10px;font-size:10px;color:var(--muted)">⚡ 99.2% Accuracy</span>
+        <span style="display:inline-flex;align-items:center;gap:5px;background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.09);border-radius:6px;padding:4px 10px;font-size:10px;color:var(--muted)">🚀 70% Faster TAT</span>
+        <span style="display:inline-flex;align-items:center;gap:5px;background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.09);border-radius:6px;padding:4px 10px;font-size:10px;color:var(--muted)">👥 10M+ Verified</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- FLOW -->
+  <div style="padding:0 24px 48px"><div class="s">
+    <div class="slabel tc" style="margin-bottom:12px">AI VERIFICATION INTELLIGENCE FLOW</div>
+    <div class="card" style="padding:22px">
+      <div class="fl scroll-x" style="gap:0">
+        <div class="fstep"><div style="width:34px;height:34px;border-radius:50%;background:var(--grad);margin:0 auto 7px;display:flex;align-items:center;justify-content:center;font-size:11px;font-weight:700">1</div><div style="font-size:10px;font-weight:700;color:#fff">Candidate<br>Onboarding</div></div>
+        <div class="fline"></div>
+        <div class="fstep"><div style="width:34px;height:34px;border-radius:50%;background:var(--bg3);border:2px solid var(--accent);margin:0 auto 7px;display:flex;align-items:center;justify-content:center;font-size:11px;font-weight:700;color:var(--accent)">2</div><div style="font-size:10px;font-weight:600;color:var(--muted)">Document<br>Upload</div></div>
+        <div class="fline"></div>
+        <div class="fstep"><div style="width:34px;height:34px;border-radius:50%;background:var(--bg3);border:2px solid var(--primary);margin:0 auto 7px;display:flex;align-items:center;justify-content:center;font-size:11px;font-weight:700;color:var(--primary)">3</div><div style="font-size:10px;font-weight:600;color:var(--muted)">AI Document<br>Intelligence</div></div>
+        <div class="fline"></div>
+        <div class="fstep"><div style="width:34px;height:34px;border-radius:50%;background:var(--bg3);border:2px solid #f87171;margin:0 auto 7px;display:flex;align-items:center;justify-content:center;font-size:11px;font-weight:700;color:#f87171">4</div><div style="font-size:10px;font-weight:600;color:var(--muted)">Fraud<br>Detection</div></div>
+        <div class="fline"></div>
+        <div class="fstep"><div style="width:34px;height:34px;border-radius:50%;background:var(--bg3);border:2px solid var(--violet);margin:0 auto 7px;display:flex;align-items:center;justify-content:center;font-size:11px;font-weight:700;color:#a78bfa">5</div><div style="font-size:10px;font-weight:600;color:var(--muted)">Verification<br>Orchestration</div></div>
+        <div class="fline"></div>
+        <div class="fstep"><div style="width:34px;height:34px;border-radius:50%;background:var(--bg3);border:2px solid #22c55e;margin:0 auto 7px;display:flex;align-items:center;justify-content:center;font-size:11px;font-weight:700;color:#4ade80">6</div><div style="font-size:10px;font-weight:600;color:var(--muted)">Instant<br>Reports</div></div>
+        <div class="fline"></div>
+        <div class="fstep"><div style="width:34px;height:34px;border-radius:50%;background:var(--grad);margin:0 auto 7px;display:flex;align-items:center;justify-content:center;font-size:11px;font-weight:700">7</div><div style="font-size:10px;font-weight:700;color:#fff">Dashboard<br>Analytics</div></div>
+      </div>
+      <div class="divl"></div>
+      <div style="display:flex;gap:20px;flex-wrap:wrap">
+        <span style="font-size:10px;color:var(--muted)">⚡ Average TAT: 2–4 hours</span>
+        <span style="font-size:10px;color:var(--muted)">✅ 99.2% accuracy rate</span>
+        <span style="font-size:10px;color:var(--muted)">🛡 100% consent-first architecture</span>
+      </div>
+    </div>
+  </div></div>
+
+  <!-- METRICS -->
+  <div style="padding:0 24px 52px"><div class="s">
+    <div class="g4">
+      <div class="card tc" style="padding:24px 14px"><div class="snum" style="color:var(--accent)">99.2%</div><div style="font-size:12px;color:var(--muted);margin:7px 0 8px">Verification Accuracy</div><span class="chip cg">Industry-leading</span></div>
+      <div class="card tc" style="padding:24px 14px"><div class="snum" style="color:var(--accent)">70%</div><div style="font-size:12px;color:var(--muted);margin:7px 0 8px">Faster TAT vs Manual</div><span class="chip cb">AI-powered</span></div>
+      <div class="card tc" style="padding:24px 14px"><div class="snum" style="color:var(--accent)">10M+</div><div style="font-size:12px;color:var(--muted);margin:7px 0 8px">Verifications Processed</div><span class="chip cg">At scale</span></div>
+      <div class="card tc" style="padding:24px 14px"><div class="snum" style="color:var(--accent)">500+</div><div style="font-size:12px;color:var(--muted);margin:7px 0 8px">Enterprise Clients</div><span class="chip cv">And growing</span></div>
+    </div>
+  </div></div>
+
+  <!-- VISION & MISSION -->
+  <div style="padding:0 24px 56px"><div class="s">
+    <div class="tc mb32"><div class="slabel">VISION & MISSION</div><h2>What we stand for.</h2></div>
+    <div class="g2" style="gap:18px;margin-bottom:16px">
+      <div style="background:linear-gradient(135deg,rgba(37,99,235,.1),rgba(56,182,255,.06));border:1px solid rgba(56,182,255,.26);border-radius:16px;padding:28px">
+        <div style="width:40px;height:40px;border-radius:10px;background:var(--grad);display:flex;align-items:center;justify-content:center;margin-bottom:14px"><svg width="19" height="19" viewBox="0 0 24 24" style="stroke:#fff;fill:none;stroke-width:2"><circle cx="12" cy="12" r="10"/><path d="M12 8v4l3 3"/></svg></div>
+        <span class="tag" style="margin-bottom:10px;display:inline-block">OUR VISION</span>
+        <h3 style="font-size:16px;line-height:1.4;margin:8px 0 10px">A world where trust is <span class="gtv">instantly verifiable.</span></h3>
+        <p style="font-size:12px;color:var(--muted);line-height:1.9">We envision a future where identity fraud is impossible, credentials are instantly trustworthy, and every professional and commercial relationship is built on a verified foundation of certainty — powered by AI and accessible to every enterprise on the planet.</p>
+      </div>
+      <div style="background:linear-gradient(135deg,rgba(109,40,217,.1),rgba(56,182,255,.05));border:1px solid rgba(109,40,217,.3);border-radius:16px;padding:28px">
+        <div style="width:40px;height:40px;border-radius:10px;background:var(--gradv);display:flex;align-items:center;justify-content:center;margin-bottom:14px"><svg width="19" height="19" viewBox="0 0 24 24" style="stroke:#fff;fill:none;stroke-width:2"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg></div>
+        <span class="tag tagv" style="display:inline-block;margin-bottom:10px">OUR MISSION</span>
+        <h3 style="font-size:16px;line-height:1.4;margin:8px 0 10px">To make trust <span class="gtv">verifiable at speed.</span></h3>
+        <p style="font-size:12px;color:var(--muted);line-height:1.9">To deliver AI-powered verification intelligence that enables enterprises to make faster, smarter, and safer decisions about the people and organisations they work with — eliminating fraud, ensuring compliance, and building the trust infrastructure modern business depends on.</p>
+      </div>
+    </div>
+    <div class="card fl" style="gap:20px;flex-wrap:wrap;padding:18px 22px">
+      <div style="flex:1;min-width:180px"><div class="slabel" style="margin-bottom:8px">CORE VALUES</div><div style="display:flex;gap:7px;flex-wrap:wrap"><span class="chip cb">Integrity</span><span class="chip cb">Intelligence</span><span class="chip cv">Privacy-First</span><span class="chip cv">Transparency</span><span class="chip cg">Accountability</span><span class="chip cg">Innovation</span></div></div>
+      <div style="border-left:2px solid var(--gb);padding-left:18px;max-width:280px;font-size:12px;font-style:italic;color:var(--muted);line-height:1.8">"Turning verification into a strategic advantage — not a compliance checkbox."</div>
+    </div>
+  </div></div>
+
+  <!-- SERVICES -->
+  <div class="secpad"><div class="s">
+    <div class="tc mb32"><div class="slabel">VERIFICATION SERVICES</div><h2>Every verification. One platform.</h2><p style="color:var(--muted);font-size:13px;margin-top:7px;max-width:460px;margin-left:auto;margin-right:auto">From employment history to criminal records — AI-powered and delivered at enterprise scale.</p></div>
+    <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(148px,1fr));gap:10px">
+      <div class="card" style="padding:14px"><div class="ibox mb8"><svg viewBox="0 0 24 24"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg></div><div style="font-size:11px;font-weight:700;margin-bottom:4px">Employment BGV</div><div style="font-size:10px;color:var(--muted)">Work history &amp; tenure</div></div>
+      <div class="card" style="padding:14px"><div class="ibox mb8"><svg viewBox="0 0 24 24"><path d="M22 10v6M2 10l10-5 10 5-10 5-10-5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg></div><div style="font-size:11px;font-weight:700;margin-bottom:4px">Education Verification</div><div style="font-size:10px;color:var(--muted)">Degree &amp; diploma checks</div></div>
+      <div class="card" style="padding:14px"><div class="ibox mb8"><svg viewBox="0 0 24 24"><path d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg></div><div style="font-size:11px;font-weight:700;margin-bottom:4px">Criminal Checks</div><div style="font-size:10px;color:var(--muted)">National &amp; court records</div></div>
+      <div class="card" style="padding:14px"><div class="ibox mb8"><svg viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"/><path d="M20 21a8 8 0 10-16 0"/></svg></div><div style="font-size:11px;font-weight:700;margin-bottom:4px">Digital KYC</div><div style="font-size:10px;color:var(--muted)">Video KYC &amp; liveness</div></div>
+      <div class="card" style="padding:14px"><div class="ibox mb8"><svg viewBox="0 0 24 24"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/><path d="M9 22V12h6v10"/></svg></div><div style="font-size:11px;font-weight:700;margin-bottom:4px">Address Verification</div><div style="font-size:10px;color:var(--muted)">Field &amp; digital checks</div></div>
+      <div class="card" style="padding:14px"><div class="ibox mb8"><svg viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="M9 12l2 2 4-4"/></svg></div><div style="font-size:11px;font-weight:700;margin-bottom:4px">AML Screening</div><div style="font-size:10px;color:var(--muted)">Sanctions &amp; PEP checks</div></div>
+      <div class="card" style="padding:14px"><div class="ibox mb8"><svg viewBox="0 0 24 24"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg></div><div style="font-size:11px;font-weight:700;margin-bottom:4px">AI Fraud Detection</div><div style="font-size:10px;color:var(--muted)">Deepfake &amp; forgery AI</div></div>
+      <div class="card" style="padding:14px"><div class="ibox mb8"><svg viewBox="0 0 24 24"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0110 0v4"/></svg></div><div style="font-size:11px;font-weight:700;margin-bottom:4px">Vendor Due Diligence</div><div style="font-size:10px;color:var(--muted)">KYB &amp; GST verification</div></div>
+      <div class="card" style="padding:14px"><div class="ibox mb8"><svg viewBox="0 0 24 24"><rect x="2" y="5" width="20" height="14" rx="2"/><path d="M2 10h20"/></svg></div><div style="font-size:11px;font-weight:700;margin-bottom:4px">Bank Verification</div><div style="font-size:10px;color:var(--muted)">Account &amp; penny drop</div></div>
+      <div class="card" style="padding:14px"><div class="ibox mb8"><svg viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><path d="M14 2v6h6M16 13H8M16 17H8"/></svg></div><div style="font-size:11px;font-weight:700;margin-bottom:4px">Document Auth</div><div style="font-size:10px;color:var(--muted)">OCR &amp; tamper detection</div></div>
+      <div class="card" style="padding:14px"><div class="ibox mb8"><svg viewBox="0 0 24 24"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg></div><div style="font-size:11px;font-weight:700;margin-bottom:4px">API Verification</div><div style="font-size:10px;color:var(--muted)">REST &amp; webhook access</div></div>
+      <div class="card" style="padding:14px"><div class="ibox mb8"><svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/><circle cx="12" cy="16" r="2"/></svg></div><div style="font-size:11px;font-weight:700;margin-bottom:4px">Identity Verification</div><div style="font-size:10px;color:var(--muted)">Aadhaar, PAN, passport</div></div>
+    </div>
+    <div class="tc mt24"><button class="btn btn-o" onclick="go('services')">View All Services →</button></div>
+  </div></div>
+
+  <!-- AI ADVANTAGE -->
+  <div style="padding:0 24px 56px"><div class="s">
+    <div class="g2" style="gap:40px;align-items:center">
+      <div>
+        <div class="badge mb16"><span class="bdot"></span>AI VERIFICATION ENGINE</div>
+        <h2 class="mb16">Intelligence-first verification.<br><span class="gtv">Not just automation.</span></h2>
+        <p style="font-size:13px;color:var(--muted);margin-bottom:20px;line-height:1.8">TruverIQ's proprietary AI engine doesn't just speed up manual processes — it fundamentally reimagines verification with multi-modal intelligence, adaptive risk scoring, and autonomous fraud detection.</p>
+        <div class="flc gap12">
+          <div class="fl gap12"><div class="sdot" style="margin-top:3px"></div><div><div style="font-size:12px;font-weight:600">AI Verification Orchestration</div><div style="font-size:10px;color:var(--muted)">Intelligent routing across 50+ verification sources</div></div></div>
+          <div class="fl gap12"><div class="sdot" style="margin-top:3px"></div><div><div style="font-size:12px;font-weight:600">Fraud Detection Engine</div><div style="font-size:10px;color:var(--muted)">Real-time deepfake, forgery &amp; identity fraud detection</div></div></div>
+          <div class="fl gap12"><div class="sdot" style="margin-top:3px"></div><div><div style="font-size:12px;font-weight:600">AI Risk Scoring</div><div style="font-size:10px;color:var(--muted)">Explainable composite scores across 40+ risk signals</div></div></div>
+          <div class="fl gap12"><div class="sdot" style="margin-top:3px"></div><div><div style="font-size:12px;font-weight:600">AI Analyst Copilot</div><div style="font-size:10px;color:var(--muted)">LLM-powered discrepancy analysis &amp; case summarisation</div></div></div>
+        </div>
+        <button class="btn btn-p mt16" onclick="go('ai')">Explore AI Engine →</button>
+      </div>
+      <div class="card" style="padding:18px">
+        <div class="slabel mb12">AI RISK ANALYSIS — LIVE SAMPLE</div>
+        <div style="background:var(--bg);border-radius:7px;padding:13px;margin-bottom:10px">
+          <div style="display:flex;justify-content:space-between;margin-bottom:10px"><span style="font-size:10px;color:var(--muted)">Candidate: RA-10492</span><span class="chip ca">Under Review</span></div>
+          <div style="margin-bottom:8px"><div style="display:flex;justify-content:space-between;margin-bottom:3px"><span style="font-size:10px;color:var(--muted)">Education Match</span><span style="font-size:10px;color:#4ade80">94%</span></div><div class="pb"><div class="pf" style="width:94%"></div></div></div>
+          <div style="margin-bottom:8px"><div style="display:flex;justify-content:space-between;margin-bottom:3px"><span style="font-size:10px;color:var(--muted)">Employment Match</span><span style="font-size:10px;color:#fbbf24">71%</span></div><div class="pb"><div class="pf" style="width:71%;background:linear-gradient(90deg,#f59e0b,#fbbf24)"></div></div></div>
+          <div style="margin-bottom:8px"><div style="display:flex;justify-content:space-between;margin-bottom:3px"><span style="font-size:10px;color:var(--muted)">Document Authenticity</span><span style="font-size:10px;color:#4ade80">98%</span></div><div class="pb"><div class="pf" style="width:98%"></div></div></div>
+          <div><div style="display:flex;justify-content:space-between;margin-bottom:3px"><span style="font-size:10px;color:var(--muted)">Fraud Risk Score</span><span style="font-size:10px;color:#f87171">22%</span></div><div class="pb"><div class="pf" style="width:22%;background:linear-gradient(90deg,#dc2626,#f87171)"></div></div></div>
+        </div>
+        <div style="background:rgba(251,191,36,.05);border:1px solid rgba(251,191,36,.2);border-radius:6px;padding:10px"><div style="font-size:10px;font-weight:700;color:#fbbf24;margin-bottom:3px">⚠ AI Discrepancy Detected</div><div style="font-size:10px;color:var(--muted)">Employment tenure mismatch: Declared 3.5 yrs vs verified 2.1 yrs at Organisation B. Escalated for analyst review.</div></div>
+      </div>
+    </div>
+  </div></div>
+
+  <!-- INTEGRATIONS -->
+  <div class="secpad"><div class="s">
+    <div class="tc mb24"><div class="slabel">ENTERPRISE INTEGRATIONS</div><h2>Connects with your entire HR ecosystem</h2></div>
+    <div style="display:flex;gap:8px;flex-wrap:wrap;justify-content:center">
+      <div class="card" style="padding:9px 16px;font-size:12px;font-weight:600">SAP SuccessFactors</div>
+      <div class="card" style="padding:9px 16px;font-size:12px;font-weight:600">Workday</div>
+      <div class="card" style="padding:9px 16px;font-size:12px;font-weight:600">Darwinbox</div>
+      <div class="card" style="padding:9px 16px;font-size:12px;font-weight:600">Oracle HCM</div>
+      <div class="card" style="padding:9px 16px;font-size:12px;font-weight:600">Zoho People</div>
+      <div class="card" style="padding:9px 16px;font-size:12px;font-weight:600">Salesforce</div>
+      <div class="card" style="padding:9px 16px;font-size:12px;font-weight:600">Keka HR</div>
+      <div class="card" style="padding:9px 16px;font-size:12px;font-weight:600">REST API / Webhooks</div>
+    </div>
+  </div></div>
+
+  <!-- INDUSTRIES -->
+  <div style="padding:0 24px 56px"><div class="s">
+    <div class="tc mb24"><div class="slabel">INDUSTRIES WE SERVE</div><h2>Purpose-built for every sector</h2></div>
+    <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(110px,1fr));gap:10px">
+      <div class="card tc" style="padding:14px"><div style="font-size:22px;margin-bottom:5px">🏦</div><div style="font-size:11px;font-weight:700">BFSI</div></div>
+      <div class="card tc" style="padding:14px"><div style="font-size:22px;margin-bottom:5px">💻</div><div style="font-size:11px;font-weight:700">IT &amp; Tech</div></div>
+      <div class="card tc" style="padding:14px"><div style="font-size:22px;margin-bottom:5px">👥</div><div style="font-size:11px;font-weight:700">Staffing</div></div>
+      <div class="card tc" style="padding:14px"><div style="font-size:22px;margin-bottom:5px">🏥</div><div style="font-size:11px;font-weight:700">Healthcare</div></div>
+      <div class="card tc" style="padding:14px"><div style="font-size:22px;margin-bottom:5px">🛵</div><div style="font-size:11px;font-weight:700">Gig Economy</div></div>
+      <div class="card tc" style="padding:14px"><div style="font-size:22px;margin-bottom:5px">🚚</div><div style="font-size:11px;font-weight:700">Logistics</div></div>
+      <div class="card tc" style="padding:14px"><div style="font-size:22px;margin-bottom:5px">🛒</div><div style="font-size:11px;font-weight:700">E-commerce</div></div>
+      <div class="card tc" style="padding:14px"><div style="font-size:22px;margin-bottom:5px">🏭</div><div style="font-size:11px;font-weight:700">Manufacturing</div></div>
+    </div>
+  </div></div>
+
+  <!-- TRUST -->
+  <div class="secpad"><div class="s">
+    <div class="tc mb24"><div class="slabel">TRUST &amp; COMPLIANCE</div><h2>Security is the product, not a feature.</h2></div>
+    <div class="g4">
+      <div class="card tc" style="padding:20px"><div style="font-size:26px;margin-bottom:8px">🔒</div><div style="font-size:12px;font-weight:700;margin-bottom:5px">Zero Trust Architecture</div><div style="font-size:10px;color:var(--muted)">Every request verified. No implicit trust.</div></div>
+      <div class="card tc" style="padding:20px"><div style="font-size:26px;margin-bottom:8px">📋</div><div style="font-size:12px;font-weight:700;margin-bottom:5px">DPDPA Compliant</div><div style="font-size:10px;color:var(--muted)">India's data protection framework aligned.</div></div>
+      <div class="card tc" style="padding:20px"><div style="font-size:26px;margin-bottom:8px">🛡</div><div style="font-size:12px;font-weight:700;margin-bottom:5px">ISO 27001 Aligned</div><div style="font-size:10px;color:var(--muted)">Information security management standard.</div></div>
+      <div class="card tc" style="padding:20px"><div style="font-size:26px;margin-bottom:8px">✅</div><div style="font-size:12px;font-weight:700;margin-bottom:5px">SOC 2 Ready</div><div style="font-size:10px;color:var(--muted)">Security controls framework in progress.</div></div>
+    </div>
+    <div class="tc mt24"><button class="btn btn-o" onclick="go('security')">View Security Framework →</button></div>
+  </div></div>
+
+  <!-- CTA BANNER -->
+  <div style="padding:0 24px 56px"><div class="s">
+    <div style="background:linear-gradient(135deg,var(--bg3),rgba(109,40,217,.15));border:1px solid var(--gb);border-radius:16px;padding:48px 40px;text-align:center">
+      <h2 class="mb12">Ready to transform your verification infrastructure?</h2>
+      <p style="color:var(--muted);font-size:13px;max-width:420px;margin:0 auto 22px;line-height:1.8">Join a growing list of enterprises using TruverIQ to hire with confidence, prevent fraud, and stay compliant.</p>
+      <div style="display:flex;gap:10px;justify-content:center;flex-wrap:wrap">
+        <button class="btn btn-p btn-lg" onclick="go('demo')">Book a Free Demo</button>
+        <button class="btn btn-o btn-lg" onclick="go('pricing')">Contact Sales</button>
+      </div>
+    </div>
+  </div></div>
+</div>
+
+<!-- ═══════════════ PLATFORM ═══════════════ -->
+<div id="pg-platform" class="pg">
+  <div class="hero"><div class="s">
+    <div class="badge mb16"><span class="bdot"></span>ENTERPRISE PLATFORM</div>
+    <h1 class="mb12">The TruverIQ Platform</h1>
+    <p style="font-size:15px;color:var(--muted);max-width:540px;line-height:1.8">A unified verification intelligence platform connecting AI, data orchestration, and enterprise workflows into a single trust infrastructure layer.</p>
+  </div></div>
+  <div style="padding:0 24px 56px"><div class="s">
+    <div class="g2" style="gap:16px;margin-bottom:24px">
+      <div class="card"><h3 class="mb8" style="color:var(--accent)">Verification Engine</h3><p style="font-size:12px;color:var(--muted);line-height:1.8">Orchestrates 50+ verification checks across employment, education, identity, criminal, address, and financial records through a single unified API.</p></div>
+      <div class="card"><h3 class="mb8" style="color:var(--accent)">AI Intelligence Layer</h3><p style="font-size:12px;color:var(--muted);line-height:1.8">Proprietary ML models for document authenticity, fraud detection, risk scoring, and discrepancy analysis trained on 10M+ verification cases.</p></div>
+      <div class="card"><h3 class="mb8" style="color:var(--accent)">Orchestration Console</h3><p style="font-size:12px;color:var(--muted);line-height:1.8">Configurable verification packages by role, department, and risk tier. SLA management, escalation routing, and automated follow-up workflows.</p></div>
+      <div class="card"><h3 class="mb8" style="color:var(--accent)">Enterprise Integrations</h3><p style="font-size:12px;color:var(--muted);line-height:1.8">Native connectors for SAP, Workday, Darwinbox, Oracle HCM, Zoho, Salesforce and any HRMS via REST API or webhooks.</p></div>
+    </div>
+    <div class="card" style="padding:22px;margin-bottom:24px">
+      <div class="slabel mb16">PLATFORM ARCHITECTURE</div>
+      <div style="display:flex;flex-wrap:wrap">
+        <div style="flex:1;min-width:100px;border-right:1px solid var(--gb);padding:14px;text-align:center"><div class="tag" style="margin-bottom:7px;display:block">LAYER 1</div><div style="font-size:11px;font-weight:700">Data Ingestion</div><div style="font-size:10px;color:var(--muted);margin-top:5px">Secure portal, API, HRMS sync</div></div>
+        <div style="flex:1;min-width:100px;border-right:1px solid var(--gb);padding:14px;text-align:center"><div class="tag" style="margin-bottom:7px;display:block">LAYER 2</div><div style="font-size:11px;font-weight:700">AI Processing</div><div style="font-size:10px;color:var(--muted);margin-top:5px">OCR, fraud, risk scoring</div></div>
+        <div style="flex:1;min-width:100px;border-right:1px solid var(--gb);padding:14px;text-align:center"><div class="tag" style="margin-bottom:7px;display:block">LAYER 3</div><div style="font-size:11px;font-weight:700">Verification</div><div style="font-size:10px;color:var(--muted);margin-top:5px">50+ source checks</div></div>
+        <div style="flex:1;min-width:100px;border-right:1px solid var(--gb);padding:14px;text-align:center"><div class="tag" style="margin-bottom:7px;display:block">LAYER 4</div><div style="font-size:11px;font-weight:700">Reporting</div><div style="font-size:10px;color:var(--muted);margin-top:5px">Reports, audit logs</div></div>
+        <div style="flex:1;min-width:100px;padding:14px;text-align:center"><div class="tag" style="margin-bottom:7px;display:block">LAYER 5</div><div style="font-size:11px;font-weight:700">Compliance</div><div style="font-size:10px;color:var(--muted);margin-top:5px">DPDPA, consent, RBAC</div></div>
+      </div>
+    </div>
+    <div class="tc"><button class="btn btn-p btn-lg" onclick="go('demo')">Request Platform Demo →</button></div>
+  </div></div>
+</div>
+
+<!-- ═══════════════ SERVICES ═══════════════ -->
+<div id="pg-services" class="pg">
+  <div class="hero"><div class="s">
+    <div class="badge mb16"><span class="bdot"></span>VERIFICATION SERVICES</div>
+    <h1 class="mb12">Complete verification coverage.</h1>
+    <p style="font-size:15px;color:var(--muted);max-width:500px;line-height:1.8">18 specialised verification services — all AI-enhanced, all enterprise-grade.</p>
+  </div></div>
+  <div style="padding:0 24px 56px"><div class="s">
+    <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:14px">
+      <div class="card" style="padding:18px"><div class="fl gap12 mb12"><div class="ibox"><svg viewBox="0 0 24 24"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg></div><div><h3 style="font-size:13px">Employment Verification</h3><span class="chip cg" style="margin-top:5px;display:inline-block">Core Service</span></div></div><p style="font-size:11px;color:var(--muted);line-height:1.8">Full employment history validation including tenure, designation, exit reason, and rehire eligibility. AI-powered cross-reference with discrepancy alerting.</p></div>
+      <div class="card" style="padding:18px"><div class="fl gap12 mb12"><div class="ibox"><svg viewBox="0 0 24 24"><path d="M22 10v6M2 10l10-5 10 5-10 5-10-5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg></div><div><h3 style="font-size:13px">Education Verification</h3><span class="chip cg" style="margin-top:5px;display:inline-block">Core Service</span></div></div><p style="font-size:11px;color:var(--muted);line-height:1.8">Degree, diploma, and certificate authentication. AI forgery detection on mark sheets, UGC/AICTE cross-checks, and international credential assessment.</p></div>
+      <div class="card" style="padding:18px"><div class="fl gap12 mb12"><div class="ibox"><svg viewBox="0 0 24 24"><path d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622z"/></svg></div><div><h3 style="font-size:13px">Criminal Verification</h3><span class="chip cr" style="margin-top:5px;display:inline-block">High Priority</span></div></div><p style="font-size:11px;color:var(--muted);line-height:1.8">Multi-jurisdictional criminal and court record checks. NCRB integration, high-court filings, civil litigation, and AI-assisted record matching.</p></div>
+      <div class="card" style="padding:18px"><div class="fl gap12 mb12"><div class="ibox"><svg viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"/><path d="M20 21a8 8 0 10-16 0"/></svg></div><div><h3 style="font-size:13px">Digital KYC &amp; Identity</h3><span class="chip cb" style="margin-top:5px;display:inline-block">AI-Native</span></div></div><p style="font-size:11px;color:var(--muted);line-height:1.8">Aadhaar OTP/eKYC, PAN, DL, passport. Video KYC with liveness detection, face match, and deepfake analysis. RBI-compliant V-KYC flow.</p></div>
+      <div class="card" style="padding:18px"><div class="fl gap12 mb12"><div class="ibox"><svg viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="M9 12l2 2 4-4"/></svg></div><div><h3 style="font-size:13px">AML &amp; Sanctions Screening</h3><span class="chip cr" style="margin-top:5px;display:inline-block">Compliance-critical</span></div></div><p style="font-size:11px;color:var(--muted);line-height:1.8">Real-time screening against OFAC, UN, EU, MHA, 1200+ global watchlists. PEP screening, adverse media, and continuous monitoring.</p></div>
+      <div class="card" style="padding:18px"><div class="fl gap12 mb12"><div class="ibox"><svg viewBox="0 0 24 24"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg></div><div><h3 style="font-size:13px">AI Fraud Detection</h3><span class="chip cv" style="margin-top:5px;display:inline-block">AI-Native</span></div></div><p style="font-size:11px;color:var(--muted);line-height:1.8">Multi-modal fraud detection: document forgery, deepfakes, identity cloning, and application fraud patterns with explainable AI risk scores.</p></div>
+    </div>
+    <div class="tc mt24"><button class="btn btn-p btn-lg" onclick="go('demo')">Discuss Your Requirements →</button></div>
+  </div></div>
+</div>
+
+<!-- ═══════════════ AI ENGINE ═══════════════ -->
+<div id="pg-ai" class="pg">
+  <div class="hero"><div class="s">
+    <div class="badge mb16"><span class="bdot"></span>AI VERIFICATION ENGINE</div>
+    <h1 class="mb12">Built on intelligence,<br><span class="gt">not just automation.</span></h1>
+    <p style="font-size:15px;color:var(--muted);max-width:520px;line-height:1.8">TruverIQ's proprietary AI stack is purpose-built for verification intelligence — not adapted from generic ML tools.</p>
+  </div></div>
+  <div style="padding:0 24px 40px"><div class="s">
+    <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:14px;margin-bottom:28px">
+      <div class="card" style="padding:18px"><div class="fl gap10 mb10"><div style="width:34px;height:34px;border-radius:8px;background:rgba(56,182,255,.12);display:flex;align-items:center;justify-content:center;font-size:17px;flex-shrink:0">🔎</div><h3 style="font-size:13px">OCR &amp; Document Intelligence</h3></div><p style="font-size:11px;color:var(--muted);line-height:1.8">Multi-language OCR for Aadhaar, PAN, passports. AI field extraction with confidence scoring, tamper detection, and authenticity classification.</p></div>
+      <div class="card" style="padding:18px"><div class="fl gap10 mb10"><div style="width:34px;height:34px;border-radius:8px;background:rgba(109,40,217,.12);display:flex;align-items:center;justify-content:center;font-size:17px;flex-shrink:0">🧠</div><h3 style="font-size:13px">AI Risk Scoring Engine</h3></div><p style="font-size:11px;color:var(--muted);line-height:1.8">Multi-factor composite risk scores with explainable AI providing case-level reasoning across 40+ risk signals.</p></div>
+      <div class="card" style="padding:18px"><div class="fl gap10 mb10"><div style="width:34px;height:34px;border-radius:8px;background:rgba(56,182,255,.12);display:flex;align-items:center;justify-content:center;font-size:17px;flex-shrink:0">🎭</div><h3 style="font-size:13px">Deepfake &amp; Liveness Detection</h3></div><p style="font-size:11px;color:var(--muted);line-height:1.8">Real-time video analysis: liveness, anti-spoofing, deepfake detection. Detects GAN-generated faces and 3D mask fraud with 97%+ precision.</p></div>
+      <div class="card" style="padding:18px"><div class="fl gap10 mb10"><div style="width:34px;height:34px;border-radius:8px;background:rgba(109,40,217,.12);display:flex;align-items:center;justify-content:center;font-size:17px;flex-shrink:0">🤖</div><h3 style="font-size:13px">AI Analyst Copilot</h3></div><p style="font-size:11px;color:var(--muted);line-height:1.8">LLM-powered case summarisation. Automatically drafts investigation notes, flags inconsistencies, and generates structured verification reports.</p></div>
+      <div class="card" style="padding:18px"><div class="fl gap10 mb10"><div style="width:34px;height:34px;border-radius:8px;background:rgba(56,182,255,.12);display:flex;align-items:center;justify-content:center;font-size:17px;flex-shrink:0">⚡</div><h3 style="font-size:13px">Smart Workflow Routing</h3></div><p style="font-size:11px;color:var(--muted);line-height:1.8">AI-driven TAT optimisation routing cases by complexity and urgency. Predictive queue management reduces turnaround by up to 70%.</p></div>
+      <div class="card" style="padding:18px"><div class="fl gap10 mb10"><div style="width:34px;height:34px;border-radius:8px;background:rgba(109,40,217,.12);display:flex;align-items:center;justify-content:center;font-size:17px;flex-shrink:0">🔬</div><h3 style="font-size:13px">AI Discrepancy Analysis</h3></div><p style="font-size:11px;color:var(--muted);line-height:1.8">Automated cross-referencing of declarations against verified data. Identifies tenure gaps, designation mismatches, and academic anomalies.</p></div>
+    </div>
+    <div class="card" style="padding:22px;background:linear-gradient(135deg,rgba(37,99,235,.08),rgba(109,40,217,.08))">
+      <div style="display:flex;gap:20px;flex-wrap:wrap">
+        <div style="text-align:center;flex:1;min-width:90px"><div class="snum" style="color:var(--accent)">97%</div><div style="font-size:10px;color:var(--muted);margin-top:5px">Deepfake Precision</div></div>
+        <div style="width:1px;background:var(--gb)"></div>
+        <div style="text-align:center;flex:1;min-width:90px"><div class="snum" style="color:var(--accent)">40+</div><div style="font-size:10px;color:var(--muted);margin-top:5px">Risk Signals Per Case</div></div>
+        <div style="width:1px;background:var(--gb)"></div>
+        <div style="text-align:center;flex:1;min-width:90px"><div class="snum" style="color:var(--accent)">&lt;2s</div><div style="font-size:10px;color:var(--muted);margin-top:5px">AI Processing Time</div></div>
+        <div style="width:1px;background:var(--gb)"></div>
+        <div style="text-align:center;flex:1;min-width:90px"><div class="snum" style="color:var(--accent)">10M+</div><div style="font-size:10px;color:var(--muted);margin-top:5px">Training Cases</div></div>
+      </div>
+    </div>
+  </div></div>
+</div>
+
+<!-- ═══════════════ INDUSTRIES ═══════════════ -->
+<div id="pg-industries" class="pg">
+  <div class="hero"><div class="s">
+    <div class="badge mb16"><span class="bdot"></span>INDUSTRY SOLUTIONS</div>
+    <h1 class="mb12">Tailored for every sector.</h1>
+    <p style="font-size:15px;color:var(--muted);max-width:500px;line-height:1.8">Sector-specific packages with pre-configured checks, SLAs, and compliance frameworks.</p>
+  </div></div>
+  <div style="padding:0 24px 56px"><div class="s">
+    <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:14px">
+      <div class="card" style="padding:18px"><div style="font-size:24px;margin-bottom:10px">🏦</div><h3 class="mb8">BFSI</h3><p style="font-size:11px;color:var(--muted);line-height:1.8">RBI-compliant KYC/AML with real-time sanctions screening, PEP checks, UBO verification, and FEMA/PMLA risk scoring. Supports NBFCs, banks, fintechs, and insurance.</p></div>
+      <div class="card" style="padding:18px"><div style="font-size:24px;margin-bottom:10px">💻</div><h3 class="mb8">IT &amp; Technology</h3><p style="font-size:11px;color:var(--muted);line-height:1.8">Comprehensive BGV for software engineers, consultants, and C-suite. Skills fraud detection, certification verification (AWS, Cisco), and global employment checks.</p></div>
+      <div class="card" style="padding:18px"><div style="font-size:24px;margin-bottom:10px">👥</div><h3 class="mb8">Staffing &amp; RPO</h3><p style="font-size:11px;color:var(--muted);line-height:1.8">High-volume verification at scale with bulk candidate processing, configurable TAT SLAs, and white-label candidate portals for staffing agencies and RPO firms.</p></div>
+      <div class="card" style="padding:18px"><div style="font-size:24px;margin-bottom:10px">🏥</div><h3 class="mb8">Healthcare</h3><p style="font-size:11px;color:var(--muted);line-height:1.8">Medical council registration checks, clinical credential verification, criminal background for patient-facing roles, and MCI/NMC compliance-aligned packages.</p></div>
+      <div class="card" style="padding:18px"><div style="font-size:24px;margin-bottom:10px">🛵</div><h3 class="mb8">Gig Economy</h3><p style="font-size:11px;color:var(--muted);line-height:1.8">Rapid, mobile-first BGV for gig workers with DL verification, address checks, criminal records, and continuous monitoring at platform scale.</p></div>
+      <div class="card" style="padding:18px"><div style="font-size:24px;margin-bottom:10px">🚚</div><h3 class="mb8">Logistics</h3><p style="font-size:11px;color:var(--muted);line-height:1.8">Driver licence validation, transport-specific criminal checks, address verification, and fleet operator due diligence with continuous monitoring.</p></div>
+    </div>
+  </div></div>
+</div>
+
+<!-- ═══════════════ SECURITY ═══════════════ -->
+<div id="pg-security" class="pg">
+  <div class="hero"><div class="s">
+    <div class="badge mb16"><span class="bdot"></span>SECURITY &amp; COMPLIANCE</div>
+    <h1 class="mb12">Enterprise-grade security.<br><span class="gt">By design, not afterthought.</span></h1>
+    <p style="font-size:15px;color:var(--muted);max-width:520px;line-height:1.8">TruverIQ is built on Zero Trust principles, end-to-end encryption, and consent-first data handling.</p>
+  </div></div>
+  <div style="padding:0 24px 40px"><div class="s">
+    <div class="g2" style="gap:14px;margin-bottom:20px">
+      <div class="card" style="padding:20px"><h3 class="mb8" style="color:var(--accent)">Zero Trust Architecture</h3><p style="font-size:11px;color:var(--muted);margin-bottom:12px;line-height:1.8">No implicit trust for any user, device, or request. Every access request is fully authenticated, authorised, and encrypted regardless of network location.</p><div style="display:flex;gap:6px;flex-wrap:wrap"><span class="chip cb">mTLS</span><span class="chip cb">RBAC</span><span class="chip cb">MFA</span><span class="chip cb">Audit Logs</span></div></div>
+      <div class="card" style="padding:20px"><h3 class="mb8" style="color:var(--accent)">Data Encryption</h3><p style="font-size:11px;color:var(--muted);margin-bottom:12px;line-height:1.8">AES-256 at rest for all PII. TLS 1.3 in transit. Field-level encryption for sensitive attributes. HSM key management. Data localised within India.</p><div style="display:flex;gap:6px;flex-wrap:wrap"><span class="chip cb">AES-256</span><span class="chip cb">TLS 1.3</span><span class="chip cb">HSM</span><span class="chip cb">Field Encryption</span></div></div>
+      <div class="card" style="padding:20px"><h3 class="mb8" style="color:var(--accent)">DPDPA Compliance Framework</h3><p style="font-size:11px;color:var(--muted);margin-bottom:12px;line-height:1.8">Full alignment with India's Digital Personal Data Protection Act 2023. Includes consent collection, purpose limitation, and data principal rights management.</p><div style="display:flex;gap:6px;flex-wrap:wrap"><span class="chip cg">Consent Mgmt</span><span class="chip cg">Data Principal Rights</span><span class="chip cg">Purpose Limitation</span></div></div>
+      <div class="card" style="padding:20px"><h3 class="mb8" style="color:var(--accent)">Compliance Certifications</h3><p style="font-size:11px;color:var(--muted);margin-bottom:12px;line-height:1.8">ISO 27001-aligned management. SOC 2 Type II controls in progress. GDPR-aligned for international candidates. Regular penetration testing and VA.</p><div style="display:flex;gap:6px;flex-wrap:wrap"><span class="chip cv">ISO 27001</span><span class="chip cv">SOC 2</span><span class="chip cv">GDPR Aligned</span></div></div>
+    </div>
+    <div style="border:1px solid rgba(34,197,94,.2);background:rgba(34,197,94,.03);border-radius:10px;padding:20px">
+      <div class="fl gap8 mb12"><span class="sdot"></span><h3 style="font-size:13px;color:#4ade80">All Systems Operational</h3></div>
+      <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:14px">
+        <div><div style="font-size:10px;color:var(--muted);margin-bottom:3px">API Uptime (30d)</div><div style="font-size:15px;font-weight:700">99.98%</div></div>
+        <div><div style="font-size:10px;color:var(--muted);margin-bottom:3px">Data Incidents (YTD)</div><div style="font-size:15px;font-weight:700;color:#4ade80">Zero</div></div>
+        <div><div style="font-size:10px;color:var(--muted);margin-bottom:3px">Last Pen Test</div><div style="font-size:15px;font-weight:700">Mar 2026</div></div>
+        <div><div style="font-size:10px;color:var(--muted);margin-bottom:3px">Avg CVE Response</div><div style="font-size:15px;font-weight:700">&lt;72 hrs</div></div>
+      </div>
+    </div>
+  </div></div>
+</div>
+
+<!-- ═══════════════ COMPANY ═══════════════ -->
+<div id="pg-company" class="pg">
+  <div class="hero"><div class="s">
+    <div class="badge mb16"><span class="bdot"></span>OUR COMPANY</div>
+    <h1 class="mb12">Built to make trust<br><span class="gt">verifiable at scale.</span></h1>
+    <p style="font-size:15px;color:var(--muted);max-width:540px;line-height:1.8">TruverIQ is an AI-first trust infrastructure company redefining how enterprises verify identity, credentials, and integrity — at the speed of business.</p>
+  </div></div>
+  <div style="padding:0 24px 40px"><div class="s">
+    <div class="g2" style="gap:16px;margin-bottom:16px">
+      <div style="background:linear-gradient(135deg,rgba(37,99,235,.1),rgba(56,182,255,.06));border:1px solid rgba(56,182,255,.26);border-radius:16px;padding:26px">
+        <div style="width:38px;height:38px;border-radius:9px;background:var(--grad);display:flex;align-items:center;justify-content:center;margin-bottom:12px"><svg width="18" height="18" viewBox="0 0 24 24" style="stroke:#fff;fill:none;stroke-width:2"><circle cx="12" cy="12" r="10"/><path d="M12 8v4l3 3"/></svg></div>
+        <span class="tag" style="display:inline-block;margin-bottom:8px">OUR VISION</span>
+        <h3 style="font-size:15px;line-height:1.4;margin:6px 0 8px">A world where trust is <span class="gtv">instantly verifiable.</span></h3>
+        <p style="font-size:11px;color:var(--muted);line-height:1.9">We envision a future where identity fraud is impossible, credentials are instantly trustworthy, and every professional and commercial relationship is built on a verified foundation of certainty — powered by AI and accessible to every enterprise.</p>
+      </div>
+      <div style="background:linear-gradient(135deg,rgba(109,40,217,.1),rgba(56,182,255,.05));border:1px solid rgba(109,40,217,.3);border-radius:16px;padding:26px">
+        <div style="width:38px;height:38px;border-radius:9px;background:var(--gradv);display:flex;align-items:center;justify-content:center;margin-bottom:12px"><svg width="18" height="18" viewBox="0 0 24 24" style="stroke:#fff;fill:none;stroke-width:2"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg></div>
+        <span class="tag tagv" style="display:inline-block;margin-bottom:8px">OUR MISSION</span>
+        <h3 style="font-size:15px;line-height:1.4;margin:6px 0 8px">To make trust <span class="gtv">verifiable at speed.</span></h3>
+        <p style="font-size:11px;color:var(--muted);line-height:1.9">To deliver AI-powered verification intelligence that enables enterprises to make faster, smarter, and safer decisions about the people and organisations they work with — eliminating fraud, ensuring compliance, and building the trust infrastructure modern business depends on.</p>
+      </div>
+    </div>
+    <div class="card fl" style="gap:16px;flex-wrap:wrap;padding:16px 20px;margin-bottom:32px">
+      <div style="flex:1;min-width:180px"><div class="slabel" style="margin-bottom:7px">CORE VALUES</div><div style="display:flex;gap:6px;flex-wrap:wrap"><span class="chip cb">Integrity</span><span class="chip cb">Intelligence</span><span class="chip cv">Privacy-First</span><span class="chip cv">Transparency</span><span class="chip cg">Accountability</span><span class="chip cg">Innovation</span></div></div>
+      <div style="border-left:2px solid var(--gb);padding-left:16px;max-width:260px;font-size:11px;font-style:italic;color:var(--muted);line-height:1.8">"Turning verification into a strategic advantage — not a compliance checkbox."</div>
+    </div>
+    <div class="slabel mb8">LEADERSHIP TEAM</div>
+    <h2 class="mb8" style="font-size:22px">The team behind TruverIQ</h2>
+    <p style="font-size:13px;color:var(--muted);margin-bottom:20px">Profiles coming soon. We are assembling an exceptional leadership team to drive TruverIQ's mission.</p>
+    <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(160px,1fr));gap:12px;margin-bottom:32px">
+      <div class="phbox"><div class="avph"><svg width="20" height="20" viewBox="0 0 24 24" style="stroke:rgba(56,182,255,.4);fill:none;stroke-width:1.5"><circle cx="12" cy="8" r="4"/><path d="M20 21a8 8 0 10-16 0"/></svg></div><div style="font-size:10px;color:var(--muted);margin-bottom:3px">Chief Executive Officer</div><div style="font-size:9px;color:rgba(56,182,255,.5)">Profile being added</div></div>
+      <div class="phbox"><div class="avph"><svg width="20" height="20" viewBox="0 0 24 24" style="stroke:rgba(56,182,255,.4);fill:none;stroke-width:1.5"><circle cx="12" cy="8" r="4"/><path d="M20 21a8 8 0 10-16 0"/></svg></div><div style="font-size:10px;color:var(--muted);margin-bottom:3px">Chief Technology Officer</div><div style="font-size:9px;color:rgba(56,182,255,.5)">Profile being added</div></div>
+      <div class="phbox"><div class="avph"><svg width="20" height="20" viewBox="0 0 24 24" style="stroke:rgba(56,182,255,.4);fill:none;stroke-width:1.5"><circle cx="12" cy="8" r="4"/><path d="M20 21a8 8 0 10-16 0"/></svg></div><div style="font-size:10px;color:var(--muted);margin-bottom:3px">Chief Product Officer</div><div style="font-size:9px;color:rgba(56,182,255,.5)">Profile being added</div></div>
+      <div class="phbox"><div class="avph"><svg width="20" height="20" viewBox="0 0 24 24" style="stroke:rgba(56,182,255,.4);fill:none;stroke-width:1.5"><circle cx="12" cy="8" r="4"/><path d="M20 21a8 8 0 10-16 0"/></svg></div><div style="font-size:10px;color:var(--muted);margin-bottom:3px">Chief Revenue Officer</div><div style="font-size:9px;color:rgba(56,182,255,.5)">Profile being added</div></div>
+      <div class="phbox"><div class="avph"><svg width="20" height="20" viewBox="0 0 24 24" style="stroke:rgba(56,182,255,.4);fill:none;stroke-width:1.5"><circle cx="12" cy="8" r="4"/><path d="M20 21a8 8 0 10-16 0"/></svg></div><div style="font-size:10px;color:var(--muted);margin-bottom:3px">Head of AI &amp; Data Science</div><div style="font-size:9px;color:rgba(56,182,255,.5)">Profile being added</div></div>
+      <div class="phbox"><div class="avph"><svg width="20" height="20" viewBox="0 0 24 24" style="stroke:rgba(56,182,255,.4);fill:none;stroke-width:1.5"><circle cx="12" cy="8" r="4"/><path d="M20 21a8 8 0 10-16 0"/></svg></div><div style="font-size:10px;color:var(--muted);margin-bottom:3px">Chief Compliance Officer</div><div style="font-size:9px;color:rgba(56,182,255,.5)">Profile being added</div></div>
+    </div>
+    <div class="slabel mb8">CERTIFICATIONS &amp; ACCREDITATIONS</div>
+    <h2 class="mb8" style="font-size:22px">Our trust credentials</h2>
+    <p style="font-size:13px;color:var(--muted);margin-bottom:18px">Certifications displayed here as they are acquired.</p>
+    <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(155px,1fr));gap:10px">
+      <div class="certph"><div style="font-size:20px">🛡</div><div style="font-size:10px;font-weight:700;color:#a78bfa">ISO 27001</div><span class="chip cv" style="font-size:8px">In progress</span></div>
+      <div class="certph"><div style="font-size:20px">✅</div><div style="font-size:10px;font-weight:700;color:#a78bfa">SOC 2 Type II</div><span class="chip cv" style="font-size:8px">In progress</span></div>
+      <div class="certph"><div style="font-size:20px">📋</div><div style="font-size:10px;font-weight:700;color:#4ade80">DPDPA Framework</div><span class="chip cg" style="font-size:8px">Aligned</span></div>
+      <div class="certph"><div style="font-size:20px">🌐</div><div style="font-size:10px;font-weight:700;color:#4ade80">GDPR Alignment</div><span class="chip cg" style="font-size:8px">Documented</span></div>
+      <div class="certph"><div style="font-size:20px">🔐</div><div style="font-size:10px;font-weight:700;color:#fbbf24">ISO 9001</div><span class="chip ca" style="font-size:8px">Planned Q3 2026</span></div>
+      <div class="certph"><div style="font-size:20px">⚡</div><div style="font-size:10px;font-weight:700;color:#fbbf24">RBI V-KYC</div><span class="chip ca" style="font-size:8px">Under assessment</span></div>
+    </div>
+  </div></div>
+</div>
+
+<!-- ═══════════════ DASHBOARD ═══════════════ -->
+<div id="pg-dashboard" class="pg">
+  <div class="hero"><div class="s">
+    <div class="badge mb16"><span class="bdot"></span>ENTERPRISE DASHBOARD PREVIEW</div>
+    <h1 class="mb12">Full visibility. Real-time control.</h1>
+    <p style="font-size:15px;color:var(--muted);max-width:500px;line-height:1.8">The TruverIQ enterprise console gives HR ops, security, and compliance teams a unified real-time view.</p>
+  </div></div>
+  <div style="padding:0 24px 56px"><div class="s">
+    <div class="mbrow">
+      <div class="mbar">
+        <div class="mdot" style="background:#ff5f57"></div><div class="mdot" style="background:#febc2e"></div><div class="mdot" style="background:#28c840"></div>
+        <div class="murl">app.truveriq.com/dashboard</div>
+      </div>
+      <div style="display:flex;height:380px">
+        <div class="dsb">
+          <div style="padding:8px 12px;margin-bottom:6px;display:flex;align-items:center;gap:5px">
+            <svg width="14" height="14" viewBox="0 0 100 100" fill="none"><defs><linearGradient id="dsg" x1="0" y1="0" x2="100" y2="100" gradientUnits="userSpaceOnUse"><stop offset="0%" stop-color="#38B6FF"/><stop offset="100%" stop-color="#6D28D9"/></linearGradient></defs><path d="M50 5 L90 20 L90 52 C90 74 70 88 50 95 C30 88 10 74 10 52 L10 20 Z" fill="url(#dsg)"/><path d="M30 50 L44 65 L70 37" stroke="white" stroke-width="10" stroke-linecap="round" stroke-linejoin="round" fill="none"/></svg>
+            <span style="font-size:9px;font-weight:800;color:#fff">TruverIQ</span>
+          </div>
+          <div class="dni act"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/></svg>Overview</div>
+          <div class="dni"><svg viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/></svg>Candidates</div>
+          <div class="dni"><svg viewBox="0 0 24 24"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>Analytics</div>
+          <div class="dni"><svg viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>Fraud Alerts</div>
+          <div class="dni"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 8v4l3 3"/></svg>SLA Monitor</div>
+          <div class="dni"><svg viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/></svg>Reports</div>
+        </div>
+        <div style="flex:1;padding:14px;overflow:auto;background:var(--bg2)">
+          <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:10px">
+            <div style="font-size:11px;font-weight:700">Verification Overview — May 2026</div>
+            <div style="display:flex;gap:5px"><span class="chip cg" style="font-size:8px">Live</span><span class="chip cb" style="font-size:8px">Q2 2026</span></div>
+          </div>
+          <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:7px;margin-bottom:10px">
+            <div style="background:var(--bg3);border-radius:6px;padding:9px;border:1px solid var(--gb)"><div style="font-size:8px;color:var(--muted);margin-bottom:3px">Total Cases</div><div style="font-size:18px;font-weight:800;color:var(--accent)">1,247</div><div style="font-size:8px;color:#4ade80">↑ 12% this month</div></div>
+            <div style="background:var(--bg3);border-radius:6px;padding:9px;border:1px solid var(--gb)"><div style="font-size:8px;color:var(--muted);margin-bottom:3px">Completed</div><div style="font-size:18px;font-weight:800;color:#4ade80">1,089</div><div style="font-size:8px;color:var(--muted)">87.3% complete</div></div>
+            <div style="background:var(--bg3);border-radius:6px;padding:9px;border:1px solid var(--gb)"><div style="font-size:8px;color:var(--muted);margin-bottom:3px">Fraud Flags</div><div style="font-size:18px;font-weight:800;color:#f87171">34</div><div style="font-size:8px;color:#f87171">↑ 8 new this week</div></div>
+            <div style="background:var(--bg3);border-radius:6px;padding:9px;border:1px solid var(--gb)"><div style="font-size:8px;color:var(--muted);margin-bottom:3px">Avg TAT</div><div style="font-size:18px;font-weight:800;color:#fff">3.2h</div><div style="font-size:8px;color:#4ade80">↓ 0.8h vs target</div></div>
+          </div>
+          <div style="font-size:8px;font-weight:700;color:var(--muted);margin-bottom:5px;letter-spacing:.5px">RECENT VERIFICATIONS</div>
+          <table class="mt">
+            <thead><tr><th>Case ID</th><th>Type</th><th>Status</th><th>Risk</th><th>TAT</th></tr></thead>
+            <tbody>
+              <tr><td style="color:var(--accent)">TIQ-20241</td><td>Employment</td><td><span class="chip cg" style="font-size:8px">Verified</span></td><td><span class="chip cg" style="font-size:8px">Low</span></td><td>2.1h</td></tr>
+              <tr><td style="color:var(--accent)">TIQ-20240</td><td>Criminal + ID</td><td><span class="chip ca" style="font-size:8px">In Progress</span></td><td><span class="chip ca" style="font-size:8px">Medium</span></td><td>4.5h</td></tr>
+              <tr><td style="color:var(--accent)">TIQ-20239</td><td>Education</td><td><span class="chip cr" style="font-size:8px">Discrepancy</span></td><td><span class="chip cr" style="font-size:8px">High</span></td><td>1.9h</td></tr>
+              <tr><td style="color:var(--accent)">TIQ-20238</td><td>Full BGV</td><td><span class="chip cg" style="font-size:8px">Verified</span></td><td><span class="chip cg" style="font-size:8px">Low</span></td><td>3.7h</td></tr>
+              <tr><td style="color:var(--accent)">TIQ-20237</td><td>AML Screen</td><td><span class="chip cr" style="font-size:8px">Fraud Flag</span></td><td><span class="chip cr" style="font-size:8px">Critical</span></td><td>0.4h</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div></div>
+</div>
+
+<!-- ═══════════════ PRICING ═══════════════ -->
+<div id="pg-pricing" class="pg">
+  <div class="hero"><div class="s">
+    <div class="badge mb16"><span class="bdot"></span>ENTERPRISE PRICING</div>
+    <h1 class="mb12">Transparent pricing.<br><span class="gt">Enterprise flexibility.</span></h1>
+    <p style="font-size:15px;color:var(--muted);max-width:520px;line-height:1.8">Consumption-based and subscription models available. Volume pricing for enterprise clients.</p>
+  </div></div>
+  <div style="padding:0 24px 56px"><div class="s">
+    <div class="g3" style="gap:14px">
+      <div class="card" style="padding:22px">
+        <div class="tag" style="margin-bottom:10px;display:block">STARTER</div>
+        <div style="font-size:24px;font-weight:800;margin-bottom:3px">On Request</div>
+        <div style="font-size:11px;color:var(--muted);margin-bottom:14px">Under 500 hires / year</div>
+        <div class="divl"></div>
+        <div class="flc gap8 mt12">
+          <div style="font-size:11px;display:flex;gap:7px"><span style="color:#4ade80">✓</span>Employment &amp; Education BGV</div>
+          <div style="font-size:11px;display:flex;gap:7px"><span style="color:#4ade80">✓</span>Digital ID Verification</div>
+          <div style="font-size:11px;display:flex;gap:7px"><span style="color:#4ade80">✓</span>Criminal Checks</div>
+          <div style="font-size:11px;display:flex;gap:7px"><span style="color:#4ade80">✓</span>Standard TAT SLA</div>
+          <div style="font-size:11px;display:flex;gap:7px"><span style="color:var(--muted)">–</span><span style="color:var(--muted)">AML Screening</span></div>
+          <div style="font-size:11px;display:flex;gap:7px"><span style="color:var(--muted)">–</span><span style="color:var(--muted)">AI Fraud Analytics</span></div>
+        </div>
+        <button class="btn btn-o mt16" style="width:100%" onclick="go('demo')">Get a Quote</button>
+      </div>
+      <div class="card" style="padding:22px;border-color:var(--accent);position:relative;overflow:hidden">
+        <div style="position:absolute;top:10px;right:10px;background:var(--grad);color:#fff;padding:2px 7px;border-radius:4px;font-size:8px;font-weight:700">MOST POPULAR</div>
+        <div class="tag" style="margin-bottom:10px;display:block">ENTERPRISE</div>
+        <div style="font-size:24px;font-weight:800;margin-bottom:3px">Custom</div>
+        <div style="font-size:11px;color:var(--muted);margin-bottom:14px">500–10,000 hires / year</div>
+        <div class="divl"></div>
+        <div class="flc gap8 mt12">
+          <div style="font-size:11px;display:flex;gap:7px"><span style="color:#4ade80">✓</span>All Starter features</div>
+          <div style="font-size:11px;display:flex;gap:7px"><span style="color:#4ade80">✓</span>AML &amp; Sanctions Screening</div>
+          <div style="font-size:11px;display:flex;gap:7px"><span style="color:#4ade80">✓</span>AI Fraud Detection</div>
+          <div style="font-size:11px;display:flex;gap:7px"><span style="color:#4ade80">✓</span>HRMS Integrations</div>
+          <div style="font-size:11px;display:flex;gap:7px"><span style="color:#4ade80">✓</span>SLA Dashboard &amp; Alerts</div>
+          <div style="font-size:11px;display:flex;gap:7px"><span style="color:#4ade80">✓</span>Dedicated Account Manager</div>
+        </div>
+        <button class="btn btn-p mt16" style="width:100%" onclick="go('demo')">Contact Sales</button>
+      </div>
+      <div class="card" style="padding:22px">
+        <div class="tag tagv" style="margin-bottom:10px;display:block">PLATFORM / API</div>
+        <div style="font-size:24px;font-weight:800;margin-bottom:3px">Usage-based</div>
+        <div style="font-size:11px;color:var(--muted);margin-bottom:14px">Platforms, fintechs &amp; developers</div>
+        <div class="divl"></div>
+        <div class="flc gap8 mt12">
+          <div style="font-size:11px;display:flex;gap:7px"><span style="color:#4ade80">✓</span>All Enterprise features</div>
+          <div style="font-size:11px;display:flex;gap:7px"><span style="color:#4ade80">✓</span>Full API access</div>
+          <div style="font-size:11px;display:flex;gap:7px"><span style="color:#4ade80">✓</span>Webhook support</div>
+          <div style="font-size:11px;display:flex;gap:7px"><span style="color:#4ade80">✓</span>White-label portal</div>
+          <div style="font-size:11px;display:flex;gap:7px"><span style="color:#4ade80">✓</span>10M+ API calls / month</div>
+          <div style="font-size:11px;display:flex;gap:7px"><span style="color:#4ade80">✓</span>Priority support &amp; SLAs</div>
+        </div>
+        <button class="btn btn-v mt16" style="width:100%;color:#fff" onclick="go('demo')">Talk to Engineering</button>
+      </div>
+    </div>
+  </div></div>
+</div>
+
+<!-- ═══════════════ DEMO ═══════════════ -->
+<div id="pg-demo" class="pg">
+  <div class="hero"><div class="s" style="max-width:560px">
+    <div class="badge mb16"><span class="bdot"></span>BOOK A DEMO</div>
+    <h1 class="mb12">See TruverIQ in action.</h1>
+    <p style="font-size:15px;color:var(--muted);margin-bottom:32px;line-height:1.8">A 30-minute platform walkthrough tailored to your industry, use case, and verification requirements. No commitment required.</p>
+    <div class="card" style="padding:26px">
+      <div class="g2" style="gap:12px;margin-bottom:12px">
+        <div><div style="font-size:9px;font-weight:700;color:var(--muted);margin-bottom:5px;letter-spacing:.5px">FIRST NAME *</div><input type="text" placeholder="First name" style="width:100%;background:var(--bg);border:1px solid var(--gb);border-radius:6px;padding:8px 11px;font-size:11px;color:var(--text);font-family:'Inter',sans-serif;outline:none"/></div>
+        <div><div style="font-size:9px;font-weight:700;color:var(--muted);margin-bottom:5px;letter-spacing:.5px">LAST NAME *</div><input type="text" placeholder="Last name" style="width:100%;background:var(--bg);border:1px solid var(--gb);border-radius:6px;padding:8px 11px;font-size:11px;color:var(--text);font-family:'Inter',sans-serif;outline:none"/></div>
+      </div>
+      <div style="margin-bottom:12px"><div style="font-size:9px;font-weight:700;color:var(--muted);margin-bottom:5px;letter-spacing:.5px">BUSINESS EMAIL *</div><input type="email" placeholder="name@company.com" style="width:100%;background:var(--bg);border:1px solid var(--gb);border-radius:6px;padding:8px 11px;font-size:11px;color:var(--text);font-family:'Inter',sans-serif;outline:none"/></div>
+      <div style="margin-bottom:12px"><div style="font-size:9px;font-weight:700;color:var(--muted);margin-bottom:5px;letter-spacing:.5px">COMPANY *</div><input type="text" placeholder="Your organisation name" style="width:100%;background:var(--bg);border:1px solid var(--gb);border-radius:6px;padding:8px 11px;font-size:11px;color:var(--text);font-family:'Inter',sans-serif;outline:none"/></div>
+      <div style="margin-bottom:12px"><div style="font-size:9px;font-weight:700;color:var(--muted);margin-bottom:5px;letter-spacing:.5px">ANNUAL HIRING VOLUME</div><select style="width:100%;background:var(--bg);border:1px solid var(--gb);border-radius:6px;padding:8px 11px;font-size:11px;color:var(--muted);font-family:'Inter',sans-serif;outline:none"><option value="">Select range</option><option>Under 100 hires/year</option><option>100–500 hires/year</option><option>500–2,000 hires/year</option><option>2,000–10,000 hires/year</option><option>10,000+ hires/year</option></select></div>
+      <div style="margin-bottom:18px"><div style="font-size:9px;font-weight:700;color:var(--muted);margin-bottom:5px;letter-spacing:.5px">PRIMARY USE CASE</div><input type="text" placeholder="e.g. Employee BGV, KYC, Vendor Due Diligence" style="width:100%;background:var(--bg);border:1px solid var(--gb);border-radius:6px;padding:8px 11px;font-size:11px;color:var(--text);font-family:'Inter',sans-serif;outline:none"/></div>
+      <button class="btn btn-p" style="width:100%;padding:11px;font-size:13px;font-weight:700">Request Demo →</button>
+      <p style="font-size:10px;color:var(--muted);text-align:center;margin-top:10px;line-height:1.7">By submitting you agree to our <span style="color:var(--accent);cursor:pointer">Privacy Policy</span>. We respond within 2 business hours.</p>
+    </div>
+    <div style="display:flex;gap:14px;margin-top:14px;flex-wrap:wrap">
+      <div class="fl gap8"><span class="sdot"></span><span style="font-size:11px;color:var(--muted)">30-min tailored walkthrough</span></div>
+      <div class="fl gap8"><span class="sdot"></span><span style="font-size:11px;color:var(--muted)">No commitment required</span></div>
+      <div class="fl gap8"><span class="sdot"></span><span style="font-size:11px;color:var(--muted)">Sandbox API access post-demo</span></div>
+    </div>
+  </div></div>
+</div>
+
+<!-- ═══════════════ FOOTER ═══════════════ -->
+<footer class="footer">
+  <div style="max-width:1100px;margin:0 auto">
+    <div style="display:grid;grid-template-columns:2fr 1fr 1fr 1fr 1fr;gap:28px;margin-bottom:36px">
+      <div>
+        <div style="display:flex;align-items:center;gap:9px;margin-bottom:12px">
+          <svg width="28" height="28" viewBox="0 0 100 100" fill="none"><defs><linearGradient id="ffg" x1="0" y1="0" x2="100" y2="100" gradientUnits="userSpaceOnUse"><stop offset="0%" stop-color="#38B6FF"/><stop offset="50%" stop-color="#2563EB"/><stop offset="100%" stop-color="#6D28D9"/></linearGradient></defs><path d="M50 5 L90 20 L90 52 C90 74 70 88 50 95 C30 88 10 74 10 52 L10 20 Z" fill="url(#ffg)"/><path d="M29 50 L44 65 L71 37" stroke="white" stroke-width="9.5" stroke-linecap="round" stroke-linejoin="round" fill="none"/><circle cx="73" cy="17" r="3.2" fill="#38B6FF" opacity=".9"/><circle cx="80" cy="11" r="2.2" fill="#38B6FF" opacity=".7"/></svg>
+          <div><div style="font-size:15px;font-weight:800;color:#fff">Truver<span style="color:var(--accent)">IQ</span></div><div style="font-size:7px;letter-spacing:2px;color:var(--muted)">VERIFIED · TRUSTED · CERTAIN</div></div>
+        </div>
+        <p style="font-size:11px;color:var(--muted);line-height:1.8;max-width:200px;margin-bottom:14px">AI-first trust infrastructure for enterprise background verification and identity intelligence.</p>
+        <div style="display:flex;gap:5px;flex-wrap:wrap">
+          <span style="font-size:9px;font-weight:600;color:var(--muted);border:1px solid rgba(255,255,255,.08);border-radius:4px;padding:2px 7px">DPDPA Ready</span>
+          <span style="font-size:9px;font-weight:600;color:var(--muted);border:1px solid rgba(255,255,255,.08);border-radius:4px;padding:2px 7px">ISO Aligned</span>
+          <span style="font-size:9px;font-weight:600;color:var(--muted);border:1px solid rgba(255,255,255,.08);border-radius:4px;padding:2px 7px">Zero Trust</span>
+        </div>
+      </div>
+      <div class="fcol"><h4>Platform</h4><a onclick="go('platform')">Product Overview</a><a onclick="go('ai')">AI Engine</a><a onclick="go('services')">All Services</a><a onclick="go('dashboard')">Dashboard</a><a onclick="go('pricing')">Developer API</a></div>
+      <div class="fcol"><h4>Industries</h4><a onclick="go('industries')">BFSI</a><a onclick="go('industries')">IT &amp; Technology</a><a onclick="go('industries')">Staffing &amp; RPO</a><a onclick="go('industries')">Healthcare</a><a onclick="go('industries')">Gig Economy</a></div>
+      <div class="fcol"><h4>Company</h4><a onclick="go('company')">About TruverIQ</a><a onclick="go('company')">Leadership Team</a><a>Careers</a><a>Case Studies</a><a onclick="go('demo')">Contact Us</a></div>
+      <div class="fcol"><h4>Legal</h4><a>Privacy Policy</a><a>Cookie Policy</a><a>Terms of Service</a><a>DPDPA Compliance</a><a onclick="go('security')">Security Policy</a></div>
+    </div>
+    <div class="fbot">
+      <span>© 2026 TruverIQ Pvt. Ltd. All rights reserved.</span>
+      <div style="display:flex;gap:16px;align-items:center;flex-wrap:wrap">
+        <span>Registered in India</span>
+        <span style="color:var(--accent)">truveriq.com</span>
+        <span style="display:flex;align-items:center;gap:5px"><span class="sdot"></span>All systems operational</span>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- ═══════════════ COOKIE BANNER ═══════════════ -->
+<div id="ck-overlay" class="ckover">
+  <div class="ckbox">
+    <div style="max-width:1100px;margin:0 auto">
+      <div style="display:flex;flex-direction:column;gap:12px">
+        <div style="display:flex;align-items:center;gap:8px">
+          <svg width="14" height="14" viewBox="0 0 24 24" style="stroke:var(--accent);fill:none;stroke-width:2;flex-shrink:0"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+          <span style="font-weight:800;color:#fff;font-size:13px">We use cookies responsibly</span>
+          <span style="font-size:8px;font-weight:700;background:rgba(109,40,217,.2);color:#a78bfa;border:1px solid rgba(109,40,217,.3);padding:2px 7px;border-radius:10px">DPDPA 2023</span>
+        </div>
+        <div style="display:flex;gap:20px;align-items:flex-start;flex-wrap:wrap">
+          <p style="flex:1;min-width:240px;font-size:11px;color:var(--muted);line-height:1.8;margin:0">TruverIQ uses cookies to ensure core platform functionality, understand visitor behaviour, and improve your experience. Under India's <strong style="color:var(--text)">Digital Personal Data Protection Act 2023</strong> and GDPR, you have the right to manage your preferences at any time. We never sell your data. <span style="color:var(--accent);cursor:pointer;text-decoration:underline" onclick="go('demo')">Privacy Policy</span></p>
+          <div style="flex-shrink:0;display:flex;flex-direction:column;gap:9px;min-width:200px">
+            <div style="display:flex;gap:6px;flex-wrap:wrap">
+              <span style="padding:3px 8px;border-radius:4px;font-size:9px;font-weight:700;background:rgba(34,197,94,.12);color:#4ade80;border:1px solid rgba(34,197,94,.2)">✓ Essential</span>
+              <button class="cktog" id="ck-an" style="background:rgba(56,182,255,.12);color:var(--accent);border-color:rgba(56,182,255,.25)" onclick="ckTog(this)">Analytics</button>
+              <button class="cktog" id="ck-fn" style="background:rgba(56,182,255,.12);color:var(--accent);border-color:rgba(56,182,255,.25)" onclick="ckTog(this)">Functional</button>
+              <button class="cktog" id="ck-mk" style="background:rgba(56,182,255,.12);color:var(--accent);border-color:rgba(56,182,255,.25)" onclick="ckTog(this)">Marketing</button>
+            </div>
+            <div style="font-size:9px;color:var(--muted)">Click to toggle. Essential cookies always active.</div>
+            <div style="display:flex;gap:7px">
+              <button class="btn btn-g" style="font-size:10px;padding:5px 10px;flex:1" onclick="ckReject()">Reject Non-Essential</button>
+              <button class="btn btn-p" style="font-size:10px;padding:5px 12px;flex:1;font-weight:700" onclick="ckAccept()">Accept All →</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+// ── Navigation ──
+function go(id) {
+  document.querySelectorAll('.pg').forEach(function(p){ p.classList.remove('on'); });
+  var pg = document.getElementById('pg-' + id);
+  if (pg) pg.classList.add('on');
+  document.querySelectorAll('.nl').forEach(function(n){ n.classList.remove('act'); });
+  var nl = document.getElementById('nl-' + id);
+  if (nl) nl.classList.add('act');
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+}
+
+// ── Cookie banner — show only once per session ──
+(function(){
+  try {
+    if (!sessionStorage.getItem('tiq_ck_seen')) {
+      document.getElementById('ck-overlay').style.display = 'block';
+    } else {
+      document.getElementById('ck-overlay').style.display = 'none';
+    }
+  } catch(e) {}
+})();
+
+function ckAccept() {
+  try { sessionStorage.setItem('tiq_ck_seen','1'); } catch(e){}
+  document.getElementById('ck-overlay').style.display = 'none';
+}
+function ckReject() {
+  ['ck-an','ck-fn','ck-mk'].forEach(function(id){
+    var b = document.getElementById(id);
+    if(b){ b.style.opacity='.4'; b.style.textDecoration='line-through'; }
+  });
+  setTimeout(function(){
+    try { sessionStorage.setItem('tiq_ck_seen','1'); } catch(e){}
+    document.getElementById('ck-overlay').style.display = 'none';
+  }, 500);
+}
+function ckTog(btn) {
+  var on = btn.style.opacity !== '.4';
+  btn.style.opacity = on ? '.4' : '1';
+  btn.style.textDecoration = on ? 'line-through' : 'none';
+  btn.style.background = on ? 'rgba(255,255,255,.04)' : 'rgba(56,182,255,.12)';
+  btn.style.color = on ? 'var(--muted)' : 'var(--accent)';
+}
+</script>
+</body>
+</html>
